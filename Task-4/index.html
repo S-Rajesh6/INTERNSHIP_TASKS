@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio & App Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#product-app">Products</a>
+            <a href="#todo-app">To-Do List</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="portfolio-section">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer focused on building responsive and interactive applications using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="projects" class="portfolio-section">
+            <h2>My Projects</h2>
+            <p>This page showcases my skills in Local Storage and Filtering/Sorting UI development.</p>
+        </section>
+
+        <section id="product-app" class="app-section">
+            <h2>Product Listing</h2>
+            <div class="controls-container">
+                <div class="filter-group">
+                    <label for="categoryFilter">Filter by Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="tech">Technology</option>
+                        <option value="apparel">Apparel</option>
+                        <option value="home">Home Goods</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sortOption">Sort by:</label>
+                    <select id="sortOption">
+                        <option value="name">Name (A-Z)</option>
+                        <option value="price_low">Price (Low to High)</option>
+                        <option value="rating">Rating (Highest)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="productList" class="product-grid">
+                <p class="loading-message">Loading products...</p>
+            </div>
+        </section>
+        
+        <section id="todo-app" class="app-section">
+            <h2>Local Storage To-Do List</h2>
+            <div class="add-task">
+                <input type="text" id="todoInput" placeholder="Enter a new task...">
+                <button id="addTodoBtn">Add Task</button>
+            </div>
+            <ul id="todoList">
+                </ul>
+        </section>
+
+        <section id="contact" class="portfolio-section">
+            <h2>Contact Me</h2>
+            <p>Email: example@portfolio.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portfolio Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

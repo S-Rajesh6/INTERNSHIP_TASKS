@@ -1,0 +1,119 @@
+/* File: styles.css */
+
+/* Base Styles (Desktop/Default) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* Desktop layout: Two columns */
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+}
+
+/* Common Section Styling */
+.carousel-section, .api-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Step 2: Carousel Styling */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Step 3: API Section Styling */
+#fetchJokeButton {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+#jokeSetup {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* --- Media Query for Tablet/Smaller Desktop (max-width: 992px) --- */
+@media (max-width: 992px) {
+    /* Adjust font size slightly */
+    h1 {
+        font-size: 1.8em;
+    }
+    /* Change to a stacked layout (single column) */
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* --- Media Query for Mobile (max-width: 600px) --- */
+@media (max-width: 600px) {
+    /* Further reduce padding and font size for small screens */
+    header {
+        padding: 15px 0;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .content-container {
+        padding: 10px;
+    }
+    .prev-btn, .next-btn {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}

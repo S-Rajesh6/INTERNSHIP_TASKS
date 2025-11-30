@@ -1,0 +1,54 @@
+/* File: styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Add a font */
+    background-color: #f4f4f9; /* Add a background color */
+    color: #333; /* Default text color */
+    margin: 20px; /* Add some spacing around the page */
+    line-height: 1.6;
+}
+
+h1 {
+    color: #007bff; /* Heading color */
+    text-align: center; /* Layout adjustment */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+p {
+    margin-bottom: 15px; /* Spacing for paragraphs */
+}
+
+#project-image {
+    display: block; /* Layout adjustment */
+    margin: 20px auto; /* Center the image */
+    border: 5px solid #ccc;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #28a745; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#alertButton {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto; /* Center the button */
+    transition: background-color 0.3s;
+}
+
+#alertButton:hover {
+    background-color: #e0a800;
+}

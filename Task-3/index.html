@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Web Development Showcase</h1>
+    </header>
+    
+    <main class="content-container">
+        
+        <section class="carousel-section">
+            <h2>Interactive Image Carousel</h2>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="https://www.instamojo.com/blog/wp-content/uploads/2021/08/Free-Stock-Image-Websites.jpg" alt="Nature Scene 1" class="active">
+                    <img src="https://www.instamojo.com/blog/wp-content/uploads/2021/08/Free-Stock-Image-Websites.jpg" alt="Nature Scene 2">
+                    <img src="https://www.instamojo.com/blog/wp-content/uploads/2021/08/Free-Stock-Image-Websites.jpg" alt="Nature Scene 3">
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+        </section>
+
+        <section class="api-section">
+            <h2>Real-time Joke API Fetch</h2>
+            <p>Click the button to fetch a random programming joke:</p>
+            <button id="fetchJokeButton">Get New Joke</button>
+            <div class="joke-display">
+                <p id="jokeSetup">...</p>
+                <p id="jokePunchline">...</p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Responsive Design Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

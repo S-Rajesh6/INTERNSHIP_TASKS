@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Capstone Blog</title>
+    
+    <link rel="stylesheet" href="styles.min.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1 class="site-title">My Developer Blog</h1>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#posts">Posts</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <main class="main-content">
+        
+        <section id="hero-section" class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to My Coding Journey</h2>
+                <p>Exploring the world of web development, one line of code at a time.</p>
+                <a href="#posts" class="btn btn-primary">View Latest Posts</a>
+            </div>
+        </section>
+
+        <section id="controls-and-posts" class="section-padded content-section">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="controls-container">
+                <input type="text" id="searchBar" placeholder="Search posts by title or content..." aria-label="Search posts">
+                <select id="categoryFilter" aria-label="Filter posts by category">
+                    <option value="all">All Categories</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="devops">DevOps</option>
+                    <option value="thoughts">Thoughts</option>
+                </select>
+            </div>
+
+            <div id="postsContainer" class="post-grid">
+                <p class="loading-message">Loading blog posts...</p>
+                </div>
+            <button id="loadMoreBtn" class="btn btn-secondary">Load More Posts</button>
+        </section>
+
+        <section id="about" class="section-padded about-section alternate-bg">
+            <h2 class="section-title">About This Blog</h2>
+            <div class="about-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQksR3Lt2Iy2rlmUKvJmc27GcXpe297gINhTA&s" data-src="img/profile.jpg" alt="Profile Picture" class="profile-pic" loading="lazy">
+                <p>This blog is a Capstone project designed to showcase comprehensive web development skills. It integrates a responsive design, dynamic content loading, search/filtering, and performance optimization techniques like lazy loading and deferred JavaScript. Built with pure HTML, CSS, and JavaScript, it demonstrates a strong foundation in modern web technologies.</p>
+                <p>My goal is to share insights, tutorials, and experiences from my journey as a developer. Join me as I delve into various topics from frontend frameworks to backend architectures.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padded contact-section content-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">Name:</label>
+                    <input type="text" id="contactName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message:</label>
+                    <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="app-footer alternate-bg">
+        <p>&copy; 2025 My Capstone Blog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/24x24?text=Tw" alt="Twitter"></a>
+            <a href="#" aria-label="LinkedIn"><img src="https://via.placeholder.com/24x24?text=Li" alt="LinkedIn"></a>
+            <a href="#" aria-label="GitHub"><img src="https://via.placeholder.com/24x24?text=Gh" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <script src="script.min.js" defer></script> 
+</body>
+</html>
